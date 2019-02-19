@@ -1,0 +1,160 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="webpage.css">
+
+
+
+<img class="logo" alt="Tuutkia Logo larger text.png" style= "margin-top:3.5rem;"
+src="tuttkia.png">
+
+
+<a href="C:\Users\bansw\Desktop\Tuutkia project\HomePage.html"><h1 class="leadex">TheLeadsXchange</h1></a>
+
+<h5 class="ad">A Crowd Driven Market Place</h5>
+
+&nbsp;&nbsp;
+
+
+
+<!--Nav menu start-->
+
+<div class="navbar">
+<ul>
+  <li class="dropdown"><a href="C:\Users\bansw\Desktop\Tuutkia project\Marketplace.html" class="dropbtn">MarketPlace</a>
+  <div class="dropdown-content">
+    <a href="C:\Users\bansw\Desktop\Tuutkia project\Exchange.html">Exchange</a>
+    <a href="C:\Users\bansw\Desktop\Tuutkia project\Acquisition.html">Acquisition</a>
+  </div>
+  </li>
+  
+  <li><a href="C:\Users\bansw\Desktop\Tuutkia project\About.html">About</a></li>
+  <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Contactpage.html">Contact</a></li>
+  
+  
+  <li class="dropdown"><a href="C:\Users\bansw\Desktop\Tuutkia project\Getstarted.html" class="dropbtn">Get Started</a>
+  <div class="dropdown-content">
+    <a href="C:\Users\bansw\Desktop\Tuutkia project\Login.html">Login</a><br>
+    <a href="C:\Users\bansw\Desktop\Tuutkia project\Signup.html" class="sign">Signup</a>
+  </div>
+  </li>
+  
+</ul>
+</div>
+
+
+<div class="aboutback"  style=" position: relative;" >
+    
+	
+	<img class="imageabout" src="about1.png" style="position: relative; margin-top:1.8rem; ">
+	</div>
+
+	
+
+</div><br>
+
+
+<div class="mySlides1 fade">
+  <div class="numbertext"></div>
+  <img src="slider1_about.png" style="max-height:100%;
+	max-width:100%;">
+ 
+</div>
+
+<div class="mySlides1 fade">
+  <div class="numbertext"></div>
+  <img src="slider2_about.png" style="max-height:100%;
+	max-width:100%;">
+
+</div>
+
+<div class="mySlides1 fade">
+  <div class="numbertext"></div>
+  <img src="slider3_about.png" style="max-height:100%;
+	max-width:100%;">
+
+</div>
+
+<a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next2" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>    
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds (comment this line to stop slide effect
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusSlides(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="ft">
+  <a href="https://www.instagram.com/theleadsxchange/" target="_blank" data-content="https://www.instagram.com/theleadsxchange/" data-type="external"  class="fa fa-instagram"></a>
+
+
+<a href="https://www.facebook.com/TheLeadsXchange" target="_blank" data-content="https://www.facebook.com/TheLeadsXchange" data-type="external" class="fa fa-facebook"></a>
+
+
+<a href="https://twitter.com/Tuutkia_LLC" target="_blank" data-content="https://twitter.com/Tuutkia_LLC" data-type="external" 
+class="fa fa-twitter"></a>
+
+
+<a href="https://www.linkedin.com/company/tuutkia-llc/" target="_blank" data-content="https://www.linkedin.com/company/tuutkia-llc/" data-type="external" class="fa fa-linkedin"></a>
+
+</footer>
