@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <link rel="stylesheet" href="webpage.css">
+<link rel="stylesheet" href="Mobile.css">
+<link rel="stylesheet" href="tablet.css">
 </head>
 <body>
 
@@ -14,9 +16,9 @@
 <img class="logo" alt="Tuutkia Logo larger text.png" style= "margin-top:3.5rem;"
 src="tuttkia.png">
 
-<a href="C:\Users\bansw\Desktop\Tuutkia project\HomePage.html"><h1 class="leadex" style= "margin-top:-6.5rem;">TheLeadsXchange</h1></a>
+<a href="C:\Users\bansw\Desktop\Tuutkia project\HomePage.html"><h1 class="leadex" style= "margin-top:-5.5rem;">TheLeadsXchange</h1></a>
 
-<h4 class="ad" style="margin-top:-3rem;">A Crowd Driven Market Place</h4>
+<h4 class="ad" style="margin-top:-2.5rem;">A Crowd Driven Market Place</h4>
 
 &nbsp;&nbsp;
 
@@ -24,35 +26,43 @@ src="tuttkia.png">
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li class="dropdown">
+    
 	
 	 <!-- First Tier Drop Down -->
                    
-					<a href="C:\Users\bansw\Desktop\Tuutkia project\Marketplace.html" class="dropbtn">MarketPlace</a>
-					
-	                   <ul class="dropdown-content">
-					   
-                        <li><a href="#" >Themes and stuff</a></li>
-                        <li><a href="#">Plugins</a></li>
-                       
-                    </ul> 
+	<li><a href="C:\Users\bansw\Desktop\Tuutkia project\Marketplace.html">MarketPlace<span class='toggle'></span></a>
+		   <ul class="dropdown">
+		    <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Exchange.html">Exchange</a></li>
+        <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Acquisition.html">Acquistion</a></li>
+		</ul>
 	   </li>
+		  
+		  
+		  
+		  
+		  <li class="phone"><a href="C:\Users\bansw\Desktop\Tuutkia project\Exchange.html">Exchange</a></li>
+          <li class="phone"><a href="C:\Users\bansw\Desktop\Tuutkia project\Acquisition.html">Acquistion</a></li>			
+	      
+		  
+		 
     
 	
 	<li><a href="C:\Users\bansw\Desktop\Tuutkia project\About.html">About</a></li>
     <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Contactpage.html">Contact</a></li>
     
 	
-	<li class="dropdown">
 	
-                <a href="C:\Users\bansw\Desktop\Tuutkia project\Getstarted.html" class="dropbtn">Getstarted</a>
-                 <div class="dropdown-content">
-                <ul>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Links</a></li>
-                   
-                </ul></div>
+	
+                <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Getstarted.html">Getstarted<span class='toggle'></span></a>
+                			
+	      <ul class="dropdown">
+		    <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Login.html">Login</a></li>
+        <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Signup.html">Sign Up</a></li>
+		</ul>
 	          </li>
+			  
+	    <li class="phone" ><a href="C:\Users\bansw\Desktop\Tuutkia project\Login.html">Login</a></li>
+        <li class="phone"><a href="C:\Users\bansw\Desktop\Tuutkia project\Signup.html">Sign Up</a></li>
   </ul>
 </header>
 
@@ -90,7 +100,7 @@ src="tuttkia.png">
   <span class="dot" onclick="currentSlide(2)"></span>  
 </div>
 <br>
-<footer class="ft" style ="">
+<footer class="ft">
   <a href="https://www.instagram.com/theleadsxchange/" target="_blank" data-content="https://www.instagram.com/theleadsxchange/" data-type="external"  class="fa fa-instagram"></a>
 
 
@@ -122,7 +132,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  //setTimeout(carousel, 3000); // Change image every 2 seconds (comment this line to stop slide effect
+  setTimeout(carousel, 3000); // Change image every 2 seconds (comment this line to stop slide effect
 }
 
 var slideIndex = 1;
@@ -142,6 +152,44 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+
+$(document).ready(function(){
+  //the trigger on hover when cursor directed to this class
+    $(".menu .toggle").hover(
+    function(){
+      //i used the parent ul to show submenu
+        $(this).children('.dropdown').slideDown('fast');
+    }, 
+      //when the cursor away 
+    function () {
+        $('.dropdown', this).slideUp('fast');
+    });
+  //this feature only show on 600px device width
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 
 

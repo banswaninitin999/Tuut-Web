@@ -1,0 +1,176 @@
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles  with screen as 50%*/
+
+.logo {
+	margin-left: 1.5rem;
+	width:5.5rem;
+	height:4.5rem;
+	margin-top:-1rem;
+}
+.leadex {
+	margin-top:-3.5rem;
+	margin-left: 6.5rem;
+	font-size:2rem;
+}
+
+.ad {
+	margin-left: 7rem;
+	font-size:1rem;
+	margin-top:-2rem;
+}
+
+	 
+      .mySlides{
+	    margin-left:-18rem;
+		width:50rem;
+	   height:54rem;
+	   margin-top:7rem;
+       }
+
+.ft{
+	float:left;
+	margin-left:10rem;
+	margin-top:-3rem;
+	
+}
+     .header .menu{
+		 margin-top:2rem;
+	 }
+
+
+
+
+.imagex{
+	 
+	  width:27rem;
+	  height:25rem;
+	   
+   }
+  .aboutback
+   {
+	   margin-left:-22rem;
+	   width:28rem;
+	   height:20rem;
+   }
+   
+   .mySlides1{
+	   margin-left:-3rem;
+	   margin-top:-4rem;
+	    width:30rem;
+	   height:auto;
+   }
+   
+   
+   .imageex1 ,.imageex2 ,.imageex3
+   {
+	   width:25rem;
+	  height:27rem;
+   }
+   
+  .image1{
+	width:350px;
+	height:300px;
+}
+.image2{
+	height:250px;
+	width:350px;
+}
+
+.image3{
+	
+	height:300px;
+	width:300px;
+	margin-left:-10rem;
+}
+.onemore
+{
+	margin-top:4rem;
+	float:left;
+	margin-left:-5rem;
+}
+
+.lefttab .text3
+{
+	
+	font-size:2rem;
+	text-align:justify;
+	margin-left:1rem;
+	margin-top:3rem;
+	line-height:1.9rem;
+}
+
+.lefttab .para3
+{
+	
+	margin-left:1rem;
+	text-align:justify;
+	margin-top:1rem;
+	line-height:1.9rem;
+}
+
+
+
+span.acqbutton{
+	margin-top:-7rem;
+}
+span.exbutton{
+	position:relative;
+	margin-top:3rem;
+	margin-left:3rem;
+}
+ video{
+	margin-top:25rem;
+	margin-left:-47rem;
+}
+    
+.cont img{
+	   margin-left:-15rem;
+	   width:22rem;
+   }
+   span.continfo1 
+   {
+	 width:100px;
+     margin-top:10rem;	 
+	   
+   }
+   .send{
+	   float:left;
+   }
+
+    
+}
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+
+}
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+
+}
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

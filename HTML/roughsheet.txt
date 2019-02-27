@@ -1,0 +1,439 @@
+@media all and (max-width: 450px) {
+  .prev, .next,.text 
+  {
+	
+	  font-size:6px;
+	  }
+	  .leadex 
+	  {
+		  
+		  font-size:1.5rem;
+		  margin-left:5rem;
+		  margin-top:-3rem;
+	  }
+	  .ad{
+		   
+		  font-size:0.8rem;
+		  margin-left:5rem;
+		  margin-top:-1rem; 
+	  }
+	  .logo
+	{
+		margin-left:0rem;
+		margin-top:9rem;
+
+	}
+	.navbar{
+		flex-direction:column;
+	}
+	.imagex{
+		
+	}
+	
+}
+
+
+#one a
+{
+	margin-left:-1rem;
+	margin-top:-4rem;
+	font-size:3rem;
+	z-index:1;
+}
+
+#two a
+{
+	margin-left:-1rem;
+	margin-top:1rem;
+	font-size:3rem;
+	z-index:1;
+}
+
+#three a
+{
+	margin-left:-2rem;
+	margin-top:4rem;
+	font-size:3rem;
+	z-index:1;
+}
+
+#four a
+{
+	margin-left:-3rem;
+	margin-top:7rem;
+	font-size:3rem;
+	z-index:1;
+}
+
+
+New solution for ul li  &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+
+li {
+  margin-left:25px;
+}
+
+li a {
+  display:flex;
+  color: black;
+  text-align: center;
+  padding: 2px;
+  margin:3px;
+  text-decoration: none;
+}
+
+li a:hover {
+  
+}
+
+.active {
+  
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home" class="active">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&7
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss_form_responsive
+
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_blog
+
+Use the above sheet to modify and use contact page&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&77
+
+
+<div class="navbar" id="navbarr">
+
+  <div class="dropdown">
+    
+	<button class="dropbtn" id ="one"><a href="C:\Users\bansw\Desktop\Tuutkia project\Marketplace.html">MarketPlace</a>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </button> 
+    <div class="dropdown-content">
+      <a href="C:\Users\bansw\Desktop\Tuutkia project\Exchange.html">Exchange</a>
+      <a href="C:\Users\bansw\Desktop\Tuutkia project\Acquisition.html">Acquisition</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+ <button class="dropbtn" id ="two"><a href="C:\Users\bansw\Desktop\Tuutkia project\About.html" style="">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ </div>
+ 
+ <div class="dropdown">
+ <button class="dropbtn" id="three"><a href="C:\Users\bansw\Desktop\Tuutkia project\Contactpage.html" style="">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ </div>
+  
+  <div class="dropdown">
+  <button class="dropbtn" id="four"><a href="C:\Users\bansw\Desktop\Tuutkia project\Getstarted.html">Getstarted</a>
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="C:\Users\bansw\Desktop\Tuutkia project\Login.html">Login</a>
+      <a href="C:\Users\bansw\Desktop\Tuutkia project\Signup.html">SignUp</a>
+    </div>
+
+  </div> 
+  
+</div>
+
+
+
+
+*******************************
+older nav css/tryit
+
+
+.navbar ul{
+	   float:none;
+	   margin-left:10rem;
+	   margin-top:0rem;
+	  	
+   }
+
+     .navbar li {
+		padding:2px;
+        	
+	 }
+	 
+	 .navbar a{
+		 float:center;	
+	 }
+	 
+	 
+	 .navbar ul{
+	   position:fixed;
+	   margin-left:15rem;
+	   display: inline-flex;
+	   margin-top:0rem;
+	  	
+   }
+
+     .navbar li {
+		padding:2px;
+		
+        	
+	 }
+	 
+	 .navbar a{
+		 float:center;	
+		 font-size:1.1rem;
+	 }
+	 
+	 
+	 
+	  li.dropdown{
+  display: inline-block;
+  position:relative;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  z-index: 0;
+}
+
+.dropdown-content a {
+  font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  color:#A0A09F;
+  padding:8px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+  margin-top:1.5rem;
+  
+}
+
+
+
+
+
+*****************Navbar working
+
+<div class="navbar">
+ <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+<ul class="navmenu">
+  <li class="dropdown"><a href="C:\Users\bansw\Desktop\Tuutkia project\Marketplace.html" class="dropbtn">MarketPlace</a>
+  <div class="dropdown-content">
+    <a href="C:\Users\bansw\Desktop\Tuutkia project\Exchange.html">Exchange</a>
+    <a href="C:\Users\bansw\Desktop\Tuutkia project\Acquisition.html">Acquisition</a>
+  </div>
+  </li>
+  
+  <li><a href="C:\Users\bansw\Desktop\Tuutkia project\About.html">About</a></li>
+  <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Contactpage.html">Contact</a></li>
+  
+  
+  <li class="dropdown"><a href="C:\Users\bansw\Desktop\Tuutkia project\Getstarted.html" class="dropbtn">GetStarted</a>
+  <div class="dropdown-content">
+    <a href="C:\Users\bansw\Desktop\Tuutkia project\Login.html">Login</a><br>
+    <a href="C:\Users\bansw\Desktop\Tuutkia project\Signup.html" class="sign">Signup</a>
+  </div>
+  </li>
+  
+</ul>
+</div>
+
+.navbar ul {
+  list-style-type: none;
+  float: right;
+  margin-right:22rem;
+  margin-top: -7rem;
+  padding: 0;
+  }
+
+ li {
+  
+  display:inline-block;
+  padding:2rem;
+  font-weight:normal;
+  font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  color:#A0A09F;
+}
+
+ li a {
+ 
+  display:inline-block;
+  float:left;
+  text-align: center;
+  padding: 2px;
+  margin:3px;
+  text-decoration: none;
+}
+
+.navbar .navmenu{
+	clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+ li.dropdown{
+  display: inline-block;
+  position:relative;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  z-index: 0;
+}
+
+.dropdown-content a {
+  font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  color:#A0A09F;
+  padding:8px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+  margin-top:1.5rem;
+  
+}
+.sign{
+	margin-left:-4rem;
+	margin-top:1.2rem;
+}
+
+/* hamburger menu*/
+.navbar .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.navbar .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.navbar .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.navbar .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.navbar .menu-btn {
+  display: none;
+}
+
+.navbar .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/*hamburger menu*/
+
+@media (min-width: 48em) {    /*768 pixels */
+  .navbar li {
+    float: left;
+  }
+  .navbar li a {
+    padding: 2px;
+  }
+  .navbar .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .navbar .menu-icon {
+    display: none;
+  }
+}
+
+
+Things to take care of: 
+
+1)Video Icon use for Mrketplace
+
+2)Footer tag center
+
+3)Dropdown for menu
+
+4)
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,6 +4,8 @@
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 
 <link rel="stylesheet" href="webpage.css">
+<link rel="stylesheet" href="Mobile.css">
+<link rel="stylesheet" href="tablet.css">
 
 
 
@@ -24,32 +26,42 @@ src="tuttkia.png">
 
 <!--Nav menu start-->
 
-<div class="navbar">
-<ul>
-  <li class="dropdown"><a href="C:\Users\bansw\Desktop\Tuutkia project\Marketplace.html" class="dropbtn">MarketPlace</a>
-  <div class="dropdown-content">
-    <a href="C:\Users\bansw\Desktop\Tuutkia project\Exchange.html">Exchange</a>
-    <a href="C:\Users\bansw\Desktop\Tuutkia project\Acquisition.html">Acquisition</a>
-  </div>
-  </li>
-  
-  <li><a href="C:\Users\bansw\Desktop\Tuutkia project\About.html">About</a></li>
-  <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Contactpage.html">Contact</a></li>
-  
-  
-  <li class="dropdown"><a href="C:\Users\bansw\Desktop\Tuutkia project\Getstarted.html" class="dropbtn">Get Started</a>
-  <div class="dropdown-content">
-    <a href="C:\Users\bansw\Desktop\Tuutkia project\Login.html">Login</a><br>
-    <a href="C:\Users\bansw\Desktop\Tuutkia project\Signup.html" class="sign">Signup</a>
-  </div>
-  </li>
-  
-</ul>
-</div>
+<header class="header">
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    
+	
+	 <!-- First Tier Drop Down -->
+                   
+	<li><a href="C:\Users\bansw\Desktop\Tuutkia project\Marketplace.html">MarketPlace<span class='toggle'></span></a>
+					
+	      <ul class="dropdown">
+		    <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Exchange.html">Exchange</a></li>
+        <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Acquisition.html">Acquistion</a></li>
+		</ul>
+	   </li>
+    
+	
+	<li><a href="C:\Users\bansw\Desktop\Tuutkia project\About.html">About</a></li>
+    <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Contactpage.html">Contact</a></li>
+    
+	
+	
+	
+                <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Getstarted.html">Getstarted<span class='toggle'></span></a>
+                			
+	      <ul class="dropdown">
+		    <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Login.html">Login</a></li>
+        <li><a href="C:\Users\bansw\Desktop\Tuutkia project\Signup.html">Sign Up</a></li>
+		</ul>
+	          </li>
+  </ul>
+</header>
 
 
 
-<div class="lefttab"  style=" position: relative; top: 0px; bottom: 0px;" >
+<div class="lefttab"  style=" position: relative; top: 4px; bottom: 0px;" >
     
 	
 	<p class="text3">Have your client base<br> work for you! </p>
@@ -68,13 +80,24 @@ src="tuttkia.png">
 
 </div>
 
+<div onclick="myFunction()">
+<i class="fa fa-play" id="abcd" onclick="myFunction()"></i>
+</div>
 
 <div class="videoframe ">
-<video class="videoclass" width="520" height="290" controls src="src="https://www.magisto.com/b225cf9e-d87c-420c-b634-9aa9c11faea9"></video>
+<video class="videoclass" id="myVideo" width="520" height="290" controls src="src="https://www.magisto.com/b225cf9e-d87c-420c-b634-9aa9c11faea9"></video>
  </div>    
  
 
 <script>
+function myFunction() {
+  var x = document.getElementById("myVideo");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+	} else {
+    x.style.display = "none";
+  }
+}
 </script>
 
 
@@ -102,7 +125,8 @@ src="tuttkia.png">
 
 
 
-<footer class="ft" style="margin-top:10rem;">
+
+<footer class="ft" style="display:none;">
   <a href="https://www.instagram.com/theleadsxchange/" target="_blank" data-content="https://www.instagram.com/theleadsxchange/" data-type="external"  class="fa fa-instagram"></a>
 
 

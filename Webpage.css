@@ -72,35 +72,30 @@ a {
   
   text-decoration: none;
 }
-li.dropdown{
-  display: inline-block;
-  position:relative;
-  
+
+ .dropdown {
+  position:absolute;
+  width:230px;
+  background:#1a1a1a;
+  text-align:left;
+  display:none;
+}
+li .toggle {
+  padding-left:1em;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color:white;
-  min-width: 160px;
-  z-index: 0;
+li span.toggle2 {
+  position:absolute;
+  right:0;
+  margin-right:20px;
 }
-
-.dropdown-content a {
-  font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
-  color:#A0A09F;
-  padding:8px;
-  text-decoration: none;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropbtn:hover .dropdown-content {
+.dropdown li {
   display:block;
-  margin-top:1.5rem;
-  
-}
+  }
+.dropdown li a {
+  display:block;
+} 
+
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: #f4f4f4;
@@ -119,8 +114,14 @@ li.dropdown{
 .header .menu {
   clear: both;
   max-height: 0;
+  margin-left:8rem;
+  font-size: 1rem;
+  text-align:left;
   transition: max-height .2s ease-out;
+  
 }
+
+
 
 /* menu icon */
 
@@ -137,8 +138,8 @@ li.dropdown{
   background: #333;
   display: block;
   height: 2px;
-  margin-right:6rem;
-  position: relative;
+  margin-right:8rem;
+  position:relative;
   transition: background .2s ease-out;
   width: 18px;
 }
@@ -162,6 +163,7 @@ li.dropdown{
   top: -5px;
 }
 
+
 /* menu btn */
 
 .header .menu-btn {
@@ -169,7 +171,7 @@ li.dropdown{
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 400px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -212,8 +214,40 @@ li.dropdown{
   .header .menu-icon {
     display: none;
   }
-  .dropdown .dropbtn:hover .dropdown-content {
-    display: block;
+  
+  li.dropdown{
+  display: inline-block;
+  position:relative;
+  
+}
+
+.phone{
+	display:none;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width:10px;
+  z-index: 0;
+}
+
+.dropdown a {
+  font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  color:#A0A09F;
+  padding:3px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.menu li:hover .dropdown {
+  display:block;
+  margin-left:-2.5rem;
+  
+  
 }
 }
 @media all and (max-width : 330px) {
@@ -281,6 +315,10 @@ vertical-align: middle;
   user-select: none;
 }
 
+#abcd{
+	
+	display:none;
+}
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -310,6 +348,7 @@ vertical-align: middle;
 
 /* The dots/bullets/indicators */
 .dot {
+	
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -346,334 +385,8 @@ vertical-align: middle;
 }
 
  /* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-/* Styles */
-.logo {
-	margin-left: 1.5rem;
-	width:3rem;
-	height:3rem;
-	margin-top:-2rem;
-}
-.leadex {
-	margin-top:-2.5rem;
-	margin-left: 5rem;
-	font-size:1.5rem;
-}
-
-.ad {
-	margin-left: 5rem;
-	font-size:0.7rem;
-	margin-top:-1.5rem;
-}
-   
-	 
-      
-	  
-	  .mySlides{
-	    
-      margin-left:-18rem;
-	  margin-top:5rem;
-		width:25rem;
-	   height:40rem;
-       }
-
-  .ft {
-	display:contents;
-	
-	position:relative;
-	
-   }
-.imagex{
-	   
-	   width:37rem;
-	   height:20rem;
-	  
-   }
-   
-  .aboutback
-   {
-	   margin-left:-24rem;
-	   
-	   width:28rem;
-	   height:27rem;
-   }
-   .mySlides1{
-	   margin-left:0rem;
-	   margin-top:-10rem;
-	    width:25rem;
-	   height:auto;
-   }
-   
-  
-   .dot{
-	  margin-top:-10rem;
-   }
-   .cont img{
-	   margin-left:-15rem;
-	   width:22rem;
-   }
-   span.continfo1 
-   {
-	 width:100px;
-     margin-top:10rem;	 
-	   
-   }
-   .send{
-	   float:left;
-   }
-   .imageex1 ,.imageex2 ,.imageex3
-   {
-	    width:35rem;
-	   height:20rem;
-   }
-  
-
-.image1{
-	width:300px;
-	height:350px;
-}
-.image2{
-	height:300px;
-}
-
-.image3{
-	
-	height:350px;
-	width:300px;
-	margin-left:-10rem;
-}
-.onemore
-{
-	float:left;
-	margin-left:-5rem;
-}
 
 
-.lefttab .text3
-{
-	
-	font-size:2rem;
-	text-align:justify;
-	margin-left:1rem;
-	margin-top:1rem;
-	line-height:1.9rem;
-}
-
-.lefttab .para3
-{
-	
-	margin-left:1rem;
-	text-align:justify;
-	margin-top:1rem;
-	line-height:1.9rem;
-}
-
-
-
-span.acqbutton{
-	margin-top:-7rem;
-}
-span.exbutton{
-	position:relative;
-	margin-top:3rem;
-	margin-left:3rem;
-}
- video{
-	margin-top:25rem;
-	margin-left:-47rem;
-}
-    
-}
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width : 321px) {
-/* Styles */
-}
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width : 320px) {
-/* Styles */
-
-  
-}
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-/* Styles  with screen as 50%*/
-
-.logo {
-	margin-left: 1.5rem;
-	width:5.5rem;
-	height:4.5rem;
-	margin-top:-1rem;
-}
-.leadex {
-	margin-top:-3.5rem;
-	margin-left: 6.5rem;
-	font-size:2rem;
-}
-
-.ad {
-	margin-left: 7rem;
-	font-size:1rem;
-	margin-top:-2rem;
-}
-
-	 
-      .mySlides{
-	    margin-left:-18rem;
-		width:50rem;
-	   height:54rem;
-	   margin-top:7rem;
-       }
-
-.ft{
-	float:left;
-	margin-left:10rem;
-	margin-top:0rem;
-	
-}
-     .header .menu{
-		 margin-top:2rem;
-	 }
-
-
-
-
-.imagex{
-	 
-	  width:27rem;
-	  height:25rem;
-	   
-   }
-  .aboutback
-   {
-	   margin-left:-22rem;
-	   width:28rem;
-	   height:20rem;
-   }
-   
-   .mySlides1{
-	   margin-left:-3rem;
-	   margin-top:-4rem;
-	    width:30rem;
-	   height:auto;
-   }
-   
-   
-   .imageex1 ,.imageex2 ,.imageex3
-   {
-	   width:25rem;
-	  height:27rem;
-   }
-   
-  .image1{
-	width:350px;
-	height:300px;
-}
-.image2{
-	height:250px;
-	width:350px;
-}
-
-.image3{
-	
-	height:300px;
-	width:300px;
-	margin-left:-10rem;
-}
-.onemore
-{
-	margin-top:4rem;
-	float:left;
-	margin-left:-5rem;
-}
-
-.lefttab .text3
-{
-	
-	font-size:2rem;
-	text-align:justify;
-	margin-left:1rem;
-	margin-top:3rem;
-	line-height:1.9rem;
-}
-
-.lefttab .para3
-{
-	
-	margin-left:1rem;
-	text-align:justify;
-	margin-top:1rem;
-	line-height:1.9rem;
-}
-
-
-
-span.acqbutton{
-	margin-top:-7rem;
-}
-span.exbutton{
-	position:relative;
-	margin-top:3rem;
-	margin-left:3rem;
-}
- video{
-	margin-top:25rem;
-	margin-left:-47rem;
-}
-    
-.cont img{
-	   margin-left:-15rem;
-	   width:22rem;
-   }
-   span.continfo1 
-   {
-	 width:100px;
-     margin-top:10rem;	 
-	   
-   }
-   .send{
-	   float:left;
-   }
-
-    
-}
-/* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-/* Styles */
-
-}
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-/* Styles */
-
-}
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-/* Styles */
-}
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-/* Styles */
-}
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-}
 
 
 
@@ -974,9 +687,10 @@ letter-spacing:0.05em;
 /*Social media Footer */
 .ft
 {
-    float:right;
+	position:relative;
+    
     margin-top:12rem;
-    margin-right:23rem;
+    left:76rem;
 
 }
 .fa {

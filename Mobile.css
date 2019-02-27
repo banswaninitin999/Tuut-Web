@@ -1,0 +1,226 @@
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+.logo {
+	margin-left: 1.5rem;
+	width:4rem;
+	height:3rem;
+	margin-top:-1rem;
+}
+.leadex {
+	margin-top:-3.5rem;
+	margin-left: 5rem;
+	font-size:1.5rem;
+}
+
+.ad {
+	margin-left: 5rem;
+	font-size:0.7rem;
+	margin-top:-1.5rem;
+}
+   
+	 
+      
+	  
+	  .mySlides{
+	    
+      margin-left:-18rem;
+	  margin-top:5rem;
+		width:25rem;
+	   height:40rem;
+       }
+
+  .ft
+{
+	position:relative;
+    
+    margin-top:-4rem;
+    left:7rem;
+
+}
+.imagex{
+	   
+	   width:37rem;
+	   height:20rem;
+	  
+   }
+   
+  .aboutback
+   {
+	   margin-left:-24rem;
+	   
+	   width:28rem;
+	   height:27rem;
+   }
+   .mySlides1{
+	   margin-left:0rem;
+	   margin-top:-10rem;
+	    width:25rem;
+	   height:auto;
+   }
+   li.dropdown{
+  display: inline-block;
+  position:relative;
+  
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width:10px;
+  z-index: 0;
+}
+
+.dropdown a {
+  font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  color:#A0A09F;
+  padding:3px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.menu li:hover .dropdown {
+  display:block;
+  margin-left:5rem;
+  text-align:left;
+  
+  
+}
+
+  
+   .dot{
+	  margin-top:-7rem;
+	  display:none;
+   }
+   .cont img{
+	   margin-left:-15rem;
+	   width:22rem;
+   }
+   span.continfo1 
+   {
+	 width:100px;
+     margin-top:10rem;	 
+	   
+   }
+   .send{
+	   float:left;
+   }
+   .imageex1 ,.imageex2 ,.imageex3
+   {
+	    width:35rem;
+	   height:20rem;
+   }
+  
+
+.image1{
+	width:300px;
+	height:350px;
+}
+.image2{
+	height:300px;
+}
+
+.image3{
+	
+	height:350px;
+	width:300px;
+	margin-left:-10rem;
+}
+.onemore
+{
+	float:left;
+	margin-left:-5rem;
+}
+
+
+.lefttab .text3
+{
+	
+	font-size:2rem;
+	text-align:justify;
+	margin-left:1rem;
+	margin-top:4.5rem;
+	line-height:1.9rem;
+}
+
+.lefttab .para3
+{
+	
+	margin-left:1rem;
+	text-align:justify;
+	margin-top:2rem;
+	line-height:1.9rem;
+}
+
+
+
+span.acqbutton{
+	margin-top:-7rem;
+}
+span.exbutton{
+	position:relative;
+	margin-top:3rem;
+	margin-left:3rem;
+}
+ .videoclass{
+	display:none;
+	margin-left:-48rem;
+	margin-top:25rem;
+	width:1300px;
+	height:300px;
+
+}
+
+#abcd{
+	color:red;
+	font-size:3rem;
+	margin-top:-31rem;
+	margin-left:18rem;
+	display:flex;
+}
+
+.popup .popuptext {
+
+}
+
+#abcd .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+    
+}
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+
+  
+}
