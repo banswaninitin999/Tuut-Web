@@ -6,20 +6,20 @@ and (max-device-width : 1024px) {
 
 .logo {
 	margin-left: 1.5rem;
-	width:5.5rem;
-	height:4.5rem;
+	width:7.5rem;
+	height:7.5rem;
 	margin-top:-1rem;
 }
 .leadex {
-	margin-top:-3.5rem;
-	margin-left: 6.5rem;
-	font-size:2rem;
+	margin-top:-9.5rem;
+	margin-left: 8rem;
+	font-size:3.5rem;
 }
 
 .ad {
-	margin-left: 7rem;
-	font-size:1rem;
-	margin-top:-2rem;
+	margin-left: 8rem;
+	font-size:1.6rem;
+	margin-top:-4rem;
 }
 
 	 
@@ -32,62 +32,74 @@ and (max-device-width : 1024px) {
 
 .ft{
 	float:left;
-	margin-left:10rem;
-	margin-top:-3rem;
+	margin-left:-37rem;
+	margin-top:6rem;
 	
 }
      .header .menu{
 		 margin-top:2rem;
+		 margin-left:15rem;
+		
 	 }
 
-
-
+.header .menu-icon .navicon{
+		 margin-top:2rem;
+		 margin-right:5rem;
+		 size:2rem;
+		  background: #333;
+         transition: background .2s ease-out;
+  
+		
+	 }
+.header .menu-icon {
+	font-size:4rem;
+}
 
 .imagex{
-	 
-	  width:27rem;
-	  height:25rem;
+	 margin-left:4rem;
+	  width:45rem;
+	  height:35rem;
 	   
    }
   .aboutback
    {
-	   margin-left:-22rem;
-	   width:28rem;
-	   height:20rem;
+	   margin-left:-15rem;
+	   width:40rem;
+	   height:25rem;
    }
    
    .mySlides1{
-	   margin-left:-3rem;
-	   margin-top:-4rem;
-	    width:30rem;
+	   margin-left:7rem;
+	   margin-top:-2rem;
+	    width:40rem;
 	   height:auto;
    }
    
    
    .imageex1 ,.imageex2 ,.imageex3
    {
-	   width:25rem;
-	  height:27rem;
+	   width:50rem;
+	  height:30rem;
    }
    
   .image1{
-	width:350px;
+	width:650px;
 	height:300px;
 }
 .image2{
-	height:250px;
-	width:350px;
+	height:300px;
+	width:650px;
 }
 
 .image3{
 	
 	height:300px;
 	width:300px;
-	margin-left:-10rem;
+	margin-left:-7rem;
 }
 .onemore
 {
-	margin-top:4rem;
+	margin-top:23rem;
 	float:left;
 	margin-left:-5rem;
 }

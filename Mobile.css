@@ -35,7 +35,7 @@ and (max-device-width : 480px) {
 {
 	position:relative;
     
-    margin-top:-4rem;
+    margin-top:3rem;
     left:7rem;
 
 }
@@ -49,6 +49,7 @@ and (max-device-width : 480px) {
   .aboutback
    {
 	   margin-left:-24rem;
+	   margin-top:-2rem;
 	   
 	   width:28rem;
 	   height:27rem;
@@ -125,7 +126,7 @@ and (max-device-width : 480px) {
 }
 
 .image3{
-	
+	display:none;
 	height:350px;
 	width:300px;
 	margin-left:-10rem;
@@ -134,6 +135,7 @@ and (max-device-width : 480px) {
 {
 	float:left;
 	margin-left:-5rem;
+	margin-top:23rem;
 }
 
 

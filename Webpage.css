@@ -26,7 +26,7 @@ font-family:futura-lt-w01-book,sans-serif;
 font-size: 2.5vw; 
 width:100%;
 line-height:1rem; 
-margin-top: -3.5rem;
+margin-top:-5.5rem;
 margin-left: 20rem;
 color:#605E5E
 
@@ -39,7 +39,7 @@ color:#605E5E
   font-size:1vw;
   font-weight:bold;
   color:#605E5E;
-  margin-top:-1.7rem;
+  margin-top:-2.5rem;
  
  }
 
@@ -53,7 +53,7 @@ a {
 
 .header {
   background-color: #fff;
-  position: fixed;
+ 
   width: 100%;
   z-index: 3;
 }
@@ -91,6 +91,8 @@ li span.toggle2 {
 }
 .dropdown li {
   display:block;
+  padding:1px;
+  
   }
 .dropdown li a {
   display:block;
@@ -99,6 +101,7 @@ li span.toggle2 {
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: #f4f4f4;
+
 }
 
 .header .logo {
@@ -138,7 +141,7 @@ li span.toggle2 {
   background: #333;
   display: block;
   height: 2px;
-  margin-right:8rem;
+  margin-right:3rem;
   position:relative;
   transition: background .2s ease-out;
   width: 18px;
@@ -193,7 +196,7 @@ li span.toggle2 {
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 64em) {
   .header li {
     float: left;
   }
@@ -218,6 +221,7 @@ li span.toggle2 {
   li.dropdown{
   display: inline-block;
   position:relative;
+ 
   
 }
 
@@ -229,14 +233,15 @@ li span.toggle2 {
   display: none;
   position: absolute;
   background-color:white;
-  min-width:10px;
-  z-index: 0;
+  min-width:4px;
+  z-index: 1;
 }
 
 .dropdown a {
   font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
   color:#A0A09F;
-  padding:3px;
+  padding:1px;
+  height:4px;
   text-decoration: none;
   text-align: left;
 }
@@ -245,7 +250,8 @@ li span.toggle2 {
 
 .menu li:hover .dropdown {
   display:block;
-  margin-left:-2.5rem;
+  margin-left:0.5rem;
+  margin-top:-1.2rem;
   
   
 }
@@ -280,7 +286,7 @@ vertical-align: middle;
   max-width: 1000px;
   position: relative;
   max-height:280px;
-  margin-top:2rem;
+  margin-top:3rem;
   margin-left:18rem;
 }
 
@@ -498,7 +504,7 @@ din-next-w02-light,din-next-w10-light,sans-serif;
 vertical-align:middle;
 height:17rem;
 line-height:1;
-margin-top:6rem;
+margin-top:7.8rem;
 padding:3px;
 margin-left:-12.5rem;
 
